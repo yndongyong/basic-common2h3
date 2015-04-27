@@ -21,6 +21,7 @@ sessionFactory = (SessionFactory) factory.getBean("sessionFactory");
 Session s = sessionFactory.openSession();
 TransactionSynchronizationManager.bindResource(sessionFactory, new SessionHolder(s));
 userDao = (IUserDao)factory.getBean("userDao");
+
 通过userDao完成添加：userDao.add(new User(1,"xxxx"));
 
 其它方法详见源码！
