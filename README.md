@@ -34,4 +34,4 @@ userDao = (IUserDao)factory.getBean("userDao");
 
 其它方法详见源码！
 
- 注：由于使用了spring框架，所以hibernate的session关闭是由spring的事务管理。
+
